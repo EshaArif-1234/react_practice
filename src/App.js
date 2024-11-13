@@ -8,6 +8,13 @@ import Alert from './components/Alert';
 function App() {
   const [mode, setMode] = useState('light');
   const [alert, setAlert] = useState(false);
+  const showAlert = (messge,type) =>{
+    setAlert({
+     msg:messge,
+     type:type
+    })
+    // setTimeout(() => setAlert(null),3000);
+ }
   const toggleMode = () => {
     if (mode === 'light') {
       setMode('dark');
@@ -27,12 +34,7 @@ function App() {
     }
   }
 
-  const showAlert = (messge,type) =>{
-     setAlert({
-      msg:messge,
-      type:type
-     })
-  }
+ 
 
   return (
     <React.Fragment>

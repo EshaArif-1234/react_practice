@@ -91,7 +91,7 @@ export default function Form( props) {
                         Text Summary
                     </h2>
 
-                    <p>{text.split(" ").length} words and {text.length}characters</p>
+                    <p>{text.split(" ").length} words and {text.length} characters</p>
                     <p>{0.008 * text.split("").length} read per minute</p>
                     <h2>
                         Preview:
